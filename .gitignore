@@ -1,0 +1,14 @@
+node_modules/
+vendor/
+dist/
+/docs/
+.vite/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+*.local.*
+local-data/
+.superpowers/

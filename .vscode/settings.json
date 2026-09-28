@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.exclude": { "**/.DS_Store": true },
+  "search.exclude": { "**/vendor": true, "**/dist": true },
+  "liveServer.settings.root": "/"
+}

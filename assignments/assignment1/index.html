@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Faces by Luc Freiburg for MAT 236: a live p5.js sketch, a GIMP drawing, and a painterly Blender study."
+    />
+    <title>01 / Faces · Luc Freiburg · MAT 236</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="../../shared/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="../../vendor/p5.min.js" defer></script>
+    <script src="../../shared/p5-config.js" defer></script>
+    <script src="./sketch.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="../../">Luc Freiburg / MAT 236</a>
+        <nav aria-label="Main navigation">
+          <a href="../../#assignments">Assignments</a
+          ><a href="https://csvad26.github.io/course_site/">Course site ↗</a
+          ><a href="https://github.com/CSVAD26/9">GitHub ↗</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container page-layout">
+      <article class="page-content faces-page">
+        <p class="eyebrow">
+          <a href="../../#assignments">Mini assignments</a> / 01
+        </p>
+        <h1>Faces</h1>
+        <p class="intro">
+          A smiley face in three media: geometric forms in p5.js, a digital
+          drawing in GIMP, and a painterly study in Blender.
+        </p>
+        <p class="assignment-meta">
+          Luc Freiburg · MAT 236 <span aria-hidden="true">/</span>
+          <a
+            href="https://csvad26.github.io/course_site/assignments/mini-assignment-1"
+            >Assignment brief ↗</a
+          >
+        </p>
+        <section id="p5-study" class="study" aria-labelledby="p5-heading">
+          <div class="study-heading">
+            <h2 id="p5-heading">Drawing with code</h2>
+            <span class="medium">p5.js</span>
+          </div>
+          <p>
+            A face built from a circle and arcs. The sketch runs live below.
+          </p>
+          <figure class="artwork">
+            <div class="artwork-stage">
+              <noscript>Enable JavaScript to view this p5.js sketch.</noscript>
+              <div
+                id="sketch"
+                class="sketch-frame"
+                aria-label="Live p5.js smiley face"
+              ></div>
+            </div>
+            <figcaption>01 · A circle, two eyes, and a smile.</figcaption>
+          </figure>
+          <div class="study-links">
+            <a href="./sketch.js">View p5.js source →</a>
+          </div>
+        </section>
+        <section id="gimp-study" class="study" aria-labelledby="gimp-heading">
+          <div class="study-heading">
+            <h2 id="gimp-heading">Drawing in GIMP</h2>
+            <span class="medium">GIMP</span>
+          </div>
+          <p>A basic smiley made in GIMP, with oval eyes and a curved smile.</p>
+          <figure class="artwork">
+            <a
+              class="artwork-stage"
+              href="./documentation/gimp-smiley.png"
+              aria-label="Open full-size GIMP smiley"
+              ><img
+                src="./documentation/gimp-smiley.png"
+                alt="A yellow circular face with black oval eyes and a broad curved smile on white."
+                width="800"
+                height="800"
+                loading="lazy"
+            /></a>
+            <figcaption>02 · Flat color and a smooth outline.</figcaption>
+          </figure>
+          <div class="study-links">
+            <a href="./documentation/gimp-smiley.png">View full-size image →</a
+            ><a href="./documentation/gimp-smiley.png" download
+              >Download PNG ↓</a
+            >
+          </div>
+        </section>
+        <section
+          id="blender-study"
+          class="study"
+          aria-labelledby="blender-heading"
+        >
+          <div class="study-heading">
+            <h2 id="blender-heading">A painterly study</h2>
+            <span class="medium">Blender</span>
+          </div>
+          <p>
+            A textured smiley with uneven edges and visible brush-like marks.
+          </p>
+          <figure class="artwork">
+            <a
+              class="artwork-stage"
+              href="./documentation/smiley-blender.png"
+              aria-label="Open full-size Blender render"
+              ><img
+                src="./documentation/smiley-blender.png"
+                alt="A painterly yellow smiley with rough edges, charcoal eyes, and a hand-painted-looking smile on warm white."
+                width="1024"
+                height="1024"
+                loading="lazy"
+            /></a>
+            <figcaption>
+              03 · A flat composition rendered in Blender.
+            </figcaption>
+          </figure>
+          <p class="credit">
+            Created with Chat GPT-6 Astra using a Blender Python script.
+          </p>
+          <div class="study-links">
+            <a href="./documentation/smiley-blender.png"
+              >View full-size render →</a
+            ><a href="./smiley.blend" download>Blender file (.blend) ↓</a
+            ><a href="./create_smiley.py" download>Python script (.py) ↓</a>
+          </div>
+          <details class="process">
+            <summary>Process screenshot · Blender workspace</summary>
+            <figure>
+              <a href="./documentation/smiley-blender-screenshot.jpg"
+                ><img
+                  src="./documentation/smiley-blender-screenshot.jpg"
+                  alt="The painterly smiley open in Blender, with its scene and material controls visible."
+                  width="3420"
+                  height="2146"
+                  loading="lazy"
+              /></a>
+              <figcaption>
+                <a href="./documentation/smiley-blender-screenshot.jpg"
+                  >View full-size screenshot →</a
+                >
+              </figcaption>
+            </figure>
+          </details>
+        </section>
+        <nav class="page-end" aria-label="Coursework navigation">
+          <a href="../../#assignments">← All assignments</a
+          ><a
+            href="https://github.com/CSVAD26/9/tree/main/assignments/assignment1"
+            >Assignment files on GitHub ↗</a
+          >
+        </nav>
+      </article>
+      <aside class="page-toc" aria-label="On this page">
+        <p>On this page</p>
+        <nav>
+          <a href="#p5-study">Drawing with code</a
+          ><a href="#gimp-study">Drawing in GIMP</a
+          ><a href="#blender-study">A painterly study</a>
+        </nav>
+      </aside>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <span>Luc Freiburg · UCSB Media Arts and Technology</span
+        ><a href="https://csvad26.github.io/course_site/"
+          >MAT 236 · Course site ↗</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
