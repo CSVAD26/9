@@ -11,7 +11,7 @@ export async function prepareVendor() {
     ['license.txt', 'p5-LICENSE.txt'],
   ]) {
     await copyFile(
-      new URL(`node_modules/p5/${source}`, root),
+      new URL(`node_modules/p5/${source}`, import.meta.url),
       new URL(`vendor/${destination}`, root),
     );
   }

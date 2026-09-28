@@ -1,7 +1,10 @@
 import { defineConfig } from 'vite';
+import { fileURLToPath } from 'node:url';
 
 // Sketches use classic scripts so they also work with VS Code Live Server.
 export default defineConfig({
+  root: fileURLToPath(new URL('../', import.meta.url)),
+  cacheDir: fileURLToPath(new URL('node_modules/.vite', import.meta.url)),
   server: { port: 5173, strictPort: true },
   preview: { port: 4173, strictPort: true },
   plugins: [

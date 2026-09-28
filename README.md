@@ -21,7 +21,7 @@ assignments/
 │   ├── project1/             Drawing tool
 │   └── project2/             Data portrait
 └── reflections/              Reading notes and reflections
-scripts/                      Development and build tools
+scripts/                      Dependencies, development, and build tools
 shared/                       Shared styles and p5 configuration
 templates/
 └── p5-sketch/                Reusable sketch starter
@@ -29,4 +29,4 @@ templates/
 
 Each sketch folder also includes `assets/` for media and `documentation/` for screenshots and process images. Git-ignored folders are omitted from this map.
 
-The site publishes automatically from `main` through GitHub Actions. For local editing, run `npm ci` and `npm run dev`. `npm run build` prepares the public site in `dist/`.
+The site publishes automatically from `main` through GitHub Actions. For local editing, run `npm --prefix scripts ci` and `npm --prefix scripts run dev` from the repository root. `npm --prefix scripts run build` prepares the public site in `dist/`. Use Node.js 24.
