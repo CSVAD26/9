@@ -27,13 +27,19 @@ jobs:
         with:
           node-version: '24'
           cache: npm
-          cache-dependency-path: scripts/package-lock.json
+          cache-dependency-path: |
+            scripts/package-lock.json
+            assignments/ImpossibleColors/package-lock.json
       - name: Install dependencies
         run: npm --prefix scripts ci
+      - name: Install full spectrum dependencies
+        run: npm --prefix assignments/ImpossibleColors ci
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Build static site
         run: npm --prefix scripts run build
+      - name: Verify published coursework paths
+        run: npm --prefix scripts run test:site
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:

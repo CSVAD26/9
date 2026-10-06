@@ -1,0 +1,28 @@
+CIE COLORIMETRY DATA NOTICE
+
+Attribution: International Commission on Illumination (CIE).
+CIE 1931 colour-matching functions, 2 degree observer,
+DOI https://doi.org/10.25039/CIE.DS.xvudnb9b
+CIE standard illuminant D65,
+DOI https://doi.org/10.25039/CIE.DS.hjfjmt59
+
+Both official data tables are distributed under Creative Commons
+Attribution-ShareAlike 4.0 International (CC BY-SA 4.0):
+https://creativecommons.org/licenses/by-sa/4.0/
+Legal code: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+The original CSV bytes are unmodified. The application parses their numeric
+values, selects every fifth observer row for its 5 nm path, uses a 1 nm
+trapezoidal reference, and normalizes relative illumination by visible Y.
+Finite-volume cell integration uses piecewise-linear observer functions.
+These processing steps are modifications to derived representations, not
+changes to the original files. Preserve attribution and this license for
+adapted data. The repository software license does not replace this data
+license. No endorsement by CIE is claimed.
+
+D65 ends at 830 nm. The separately authored equal-energy 300–1000 nm source
+is normalized using the observer's visible-Y integral; it is not a measured
+UV/NIR extension of D65. Interpolation adds no instrument resolution.
+
+Exact source URLs, official-metadata URLs and SHA-256 checksums are in
+data/cie/provenance.json in the source distribution.

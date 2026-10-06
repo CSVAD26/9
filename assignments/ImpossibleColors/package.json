@@ -1,0 +1,30 @@
+{
+  "name": "impossible-colors-spectrum",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5180 --strictPort",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --project headed",
+    "shaders:check": "node src/picker/render/validate-shaders.mjs"
+  },
+  "dependencies": {
+    "onnxruntime-web": "1.27.0",
+    "p5": "1.11.13",
+    "vgpu": "0.5.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "@types/node": "26.6.4",
+    "@types/p5": "1.7.7",
+    "@vgpu/wgsl": "0.5.0",
+    "@webgpu/types": "0.1.71",
+    "typescript": "5.9.3",
+    "vite": "8.3.1",
+    "vitest": "4.1.0"
+  }
+}

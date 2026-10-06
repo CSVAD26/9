@@ -1,0 +1,42 @@
+{
+  "datasetId": "cie-colorimetry-reference-v1",
+  "acquiredOn": "2026-10-05",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "attribution": "International Commission on Illumination (CIE), official datasets: CIE 1931 colour-matching functions, 2 degree observer; CIE standard illuminant D65.",
+  "tables": [
+    {
+      "id": "cie:1931-2deg",
+      "file": "CIE_xyz_1931_2deg.csv",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_xyz_1931_2deg.csv",
+      "metadataUrl": "https://files.cie.co.at/Publications-datasets/CIE_xyz_1931_2deg.csv_metadata.json",
+      "doi": "10.25039/CIE.DS.xvudnb9b",
+      "sha256": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+      "grid": { "startNm": 360, "stepNm": 1, "count": 471 },
+      "units": "dimensionless observer functions",
+      "modifications": "None to CSV bytes. Runtime 5 nm path selects every fifth original row; 1 nm reference uses original rows. Piecewise-linear CMFs integrate finite-volume cell data."
+    },
+    {
+      "id": "cie:std-illuminant-d65",
+      "file": "CIE_std_illum_D65.csv",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_std_illum_D65.csv",
+      "metadataUrl": "https://files.cie.co.at/Publications-datasets/CIE_std_illum_D65.csv_metadata_v2.json",
+      "doi": "10.25039/CIE.DS.hjfjmt59",
+      "sha256": "e76f210bffff3d552ef7113025da5f325d5dfec200dd4b878b1a2f3a507032cb",
+      "grid": { "startNm": 300, "stepNm": 1, "count": 531 },
+      "units": "relative spectral distribution; runtime label relative nm^-1, not SI irradiance",
+      "modifications": "None to CSV bytes. Relative material normalization uses the chosen observer integration grid. D65 is never extended beyond 830 nm.",
+      "sourceMetadataNotice": "Official SPD-column metadata says 360–830 nm but wavelength-column metadata and actual CSV span 300–830 nm. Original bytes retained; color integration uses only 360–830 nm."
+    }
+  ],
+  "authoredSource": {
+    "id": "authored:equal-energy-v1",
+    "grid": { "startNm": 300, "stepNm": 5, "count": 141 },
+    "processing": "Constant per-nm source normalized using trapezoidal CIE 1 nm ybar integral over 360–830 nm. Authored extended-band source; not a D65 measurement or extrapolation."
+  },
+  "displayReference": "Fixed sRGB D65 white x=0.3127, y=0.3290; source chromaticity retained, no automatic chromatic adaptation.",
+  "numericalReferences": [
+    "https://www.w3.org/TR/css-color-4/#color-conversion-code",
+    "https://hajim.rochester.edu/ece/sites/gsharma/ciede2000/"
+  ]
+}

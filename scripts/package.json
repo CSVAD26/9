@@ -15,10 +15,12 @@
     "dev": "vite --config vite.config.js --host 127.0.0.1",
     "predev:assignment2": "npm run vendor",
     "dev:assignment2": "vite --config vite.config.js --host 127.0.0.1",
+    "dev:spectrum": "npm --prefix ../assignments/ImpossibleColors run dev",
     "start": "npm run dev",
     "build": "node build.mjs",
     "preview": "vite preview --config vite.config.js --host 127.0.0.1",
-    "check": "npm run build"
+    "check": "npm run build && npm run test:site",
+    "test:site": "node --test ../assignments/ImpossibleColors/tests/site-build.test.mjs"
   },
   "dependencies": {
     "p5": "1.10.0"

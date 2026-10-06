@@ -1,0 +1,29 @@
+.curve-editor { color: #e8e8e3; min-width: 0; }
+.curve-graph { width: 100%; min-width: 0; overflow: hidden; border: 1px solid #292c2b; border-radius: 12px; background: #101112; }
+.curve-graph canvas { display: block; max-width: 100%; touch-action: none; cursor: crosshair; }
+.curve-graph canvas:focus-visible { outline: 2px solid #acd6c5; outline-offset: -3px; }
+.curve-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 12px; }
+.curve-tools, .curve-actions { display: flex; gap: 4px; }
+.curve-tools { padding: 3px; border-radius: 8px; background: #1c1e1f; }
+.curve-editor button { padding: 8px 10px; min-height: 36px; border: 1px solid transparent; border-radius: 6px; color: #93988f; background: transparent; font: inherit; font-size: 12px; cursor: pointer; }
+.curve-editor button:hover { color: #e8e8e3; background: #282c29; }
+.curve-editor button[aria-pressed="true"] { background: #333a34; color: #e8e8e3; }
+.curve-editor button:focus-visible, .curve-editor input:focus-visible { outline: 2px solid #acd6c5; outline-offset: 2px; }
+.curve-actions button { color: #b7bdb2; }
+.curve-point-form { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 8px; margin-left: auto; }
+.curve-point-form label { display: flex; flex-direction: column; gap: 5px; color: #858883; font-size: 10px; }
+.curve-point-form input { box-sizing: border-box; width: 95px; min-height: 34px; padding: 7px 8px; border: 1px solid #343835; border-radius: 5px; background: #151718; color: #e8e8e3; font: inherit; font-size: 12px; font-variant-numeric: tabular-nums; }
+.curve-point-form label:nth-child(2) input { width: 70px; }
+.curve-point-form button { background: #222825; color: #c7d6c8; min-height: 34px; }
+.curve-status { display: block; margin-top: 12px; color: #92998e; font-size: 11px; font-variant-numeric: tabular-nums; }
+.curve-hint { color: #6e746c; font-size: 11px; line-height: 1.5; margin: 6px 0 0; }
+@media (max-width: 560px) {
+  .curve-controls { gap: 8px; }
+  .curve-point-form { width: 100%; margin: 2px 0 0; }
+  .curve-point-form label:first-child { flex: 1; }
+  .curve-point-form label:first-child input { width: 100%; }
+  .curve-actions { margin-left: auto; }
+  .curve-editor button { min-height: 40px; }
+  .curve-point-form input { min-height: 40px; }
+  .curve-hint { max-width: 290px; }
+}
