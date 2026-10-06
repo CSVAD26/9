@@ -13,6 +13,8 @@
     "vendor": "node prepare-vendor.mjs",
     "predev": "npm run vendor",
     "dev": "vite --config vite.config.js --host 127.0.0.1",
+    "predev:assignment2": "npm run vendor",
+    "dev:assignment2": "vite --config vite.config.js --host 127.0.0.1",
     "start": "npm run dev",
     "build": "node build.mjs",
     "preview": "vite preview --config vite.config.js --host 127.0.0.1",

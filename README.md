@@ -2,7 +2,7 @@
 
 **Luc Freiburg**, a student in the **UCSB Media Arts and Technology Program**. This repository contains assignments, projects, and experiments for [MAT 236: Computational Systems for Visual Art and Design](https://csvad26.github.io/course_site/).
 
-[View the coursework site](https://csvad26.github.io/9/) · [01 / Faces](https://csvad26.github.io/9/assignments/assignment1/)
+[View the coursework site](https://csvad26.github.io/9/) · [01 / Faces](https://csvad26.github.io/9/assignments/assignment1/) · [02 / Impossible Colors](https://csvad26.github.io/9/assignments/MiniAssignment2/)
 
 ## Repository map
 
@@ -11,7 +11,7 @@
 .vscode/                      Editor settings
 assignments/
 ├── assignment1/              Faces
-├── MiniAssignment2/          Color picker
+├── MiniAssignment2/          Impossible Colors — RGB light curve & palettes
 ├── MiniAssignment3/          Image annotation
 ├── MiniAssignment4/          Data visualization
 ├── MiniAssignment5/          Sensor integration
@@ -29,4 +29,15 @@ templates/
 
 Each sketch folder also includes `assets/` for media and `documentation/` for screenshots and process images. Git-ignored folders are omitted from this map.
 
-The site publishes automatically from `main` through GitHub Actions. For local editing, run `npm --prefix scripts ci` and `npm --prefix scripts run dev` from the repository root. `npm --prefix scripts run build` prepares the public site in `dist/`. Use Node.js 24.
+The site publishes automatically from `main` through GitHub Actions. Use Node.js 24. From a fresh checkout:
+
+```sh
+npm --prefix scripts ci
+npm --prefix scripts run dev
+```
+
+Open `http://127.0.0.1:5173/assignments/MiniAssignment2/` for **Impossible Colors**. `npm --prefix scripts run dev:assignment2` serves the same repository root so shared scripts and the local p5.js 1.10.0 library resolve correctly.
+
+The first stage is a p5.js RGB light-curve color picker and palette creator. Draw a curve, inspect the approximate mixed color, save and edit swatches, and copy HEX values. [Assignment 2 usage](assignments/MiniAssignment2/README.md) explains the controls and the later full-spectrum direction.
+
+`npm --prefix scripts run build` copies the public coursework site into `dist/`. Assignment 2 publishes only its current HTML, sketch, stylesheet, README, assets and documentation; the ignored legacy studio and development files stay local. The build does not deploy the site.

@@ -12,3 +12,25 @@ Thumbs.db
 *.local.*
 local-data/
 .superpowers/
+planning/
+
+# Superseded Impossible Colors prototype: keep its additions local during redesign.
+# Snapshot: planning/legacy-impossible-colors-2026-10-06/
+# Remove matching rules when replacement files are ready to track.
+/assignments/MiniAssignment2/.gitignore
+/assignments/MiniAssignment2/.npmrc
+/assignments/MiniAssignment2/THIRD_PARTY_NOTICES.md
+/assignments/MiniAssignment2/artifacts/
+/assignments/MiniAssignment2/data/
+/assignments/MiniAssignment2/docs/
+/assignments/MiniAssignment2/package-lock.json
+/assignments/MiniAssignment2/package.json
+/assignments/MiniAssignment2/playwright.config.ts
+/assignments/MiniAssignment2/probe.html
+/assignments/MiniAssignment2/public/
+/assignments/MiniAssignment2/src/
+/assignments/MiniAssignment2/tests/
+/assignments/MiniAssignment2/tools/
+/assignments/MiniAssignment2/tsconfig.json
+/assignments/MiniAssignment2/vite.config.ts
+/assignments/MiniAssignment2/vitest.config.ts

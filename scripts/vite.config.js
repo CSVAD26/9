@@ -5,6 +5,8 @@ import { fileURLToPath } from 'node:url';
 export default defineConfig({
   root: fileURLToPath(new URL('../', import.meta.url)),
   cacheDir: fileURLToPath(new URL('node_modules/.vite', import.meta.url)),
+  // Classic p5 scripts need no prebundling. Avoid crawling archived HTML entries.
+  optimizeDeps: { noDiscovery: true },
   server: { port: 5173, strictPort: true },
   preview: { port: 4173, strictPort: true },
   plugins: [
